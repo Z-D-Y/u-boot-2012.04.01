@@ -1,0 +1,22 @@
+---- rval Matches (23 in 0 files) ----
+nand_write_skip_bad in nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) : 	int rval = 0, blocksize;
+nand_write_skip_bad in nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) : 		rval = nand_write (nand, offset, length, buffer);
+nand_write_skip_bad in nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) : 		if (rval == 0)
+nand_write_skip_bad in nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) : 			offset, rval);
+nand_write_skip_bad in nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) : 		return rval;
+nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) line 567 : 				rval = nand->write_oob(nand, offset, &ops);
+nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) line 568 :                 //if (!rval)
+nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) line 569 :                 if (rval)  /* zdy */
+nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) line 586 : 			rval = nand_write(nand, offset, &truncated_write_size,
+nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) line 592 : 		if (rval != 0) {
+nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) line 594 : 				offset, rval);
+nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) line 596 : 			return rval;
+nand_read_skip_bad in nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) : 	int rval;
+nand_read_skip_bad in nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) : 		rval = nand_read (nand, offset, length, buffer);
+nand_read_skip_bad in nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) : 		if (!rval || rval == -EUCLEAN)
+nand_read_skip_bad in nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) : 			offset, rval);
+nand_read_skip_bad in nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) : 		return rval;
+nand_read_skip_bad in nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) : 		rval = nand_read (nand, offset, &read_length, p_buffer);
+nand_read_skip_bad in nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) : 		if (rval && rval != -EUCLEAN) {
+nand_read_skip_bad in nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) : 				offset, rval);
+nand_read_skip_bad in nand_util.c (D:\linux Doc\u-boot-2012.04.01\drivers\mtd\nand) : 			return rval;
